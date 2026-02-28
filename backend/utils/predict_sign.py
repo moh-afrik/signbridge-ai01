@@ -16,9 +16,9 @@ prediction_buffer = deque(maxlen=15)
 # =========================================
 # LOAD TRAINED MODEL
 # =========================================
-MODEL_PATH = "../../ai_model/sign_pipeline.pkl"
-ENCODER_PATH = "../../ai_model/label_encoder.pkl"
-TASK_MODEL = "../models/hand_landmarker.task"
+MODEL_PATH = "../ai_model/sign_pipeline.pkl"
+ENCODER_PATH = "../ai_model/label_encoder.pkl"
+TASK_MODEL = "models/hand_landmarker.task"
 
 pipeline = joblib.load(MODEL_PATH)
 encoder = joblib.load(ENCODER_PATH)
